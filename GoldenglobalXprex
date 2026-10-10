@@ -1,0 +1,176 @@
+# GoldenglobalXprex
+An online travel booking platform for flights, bus tickets, secure payments, and travel assistance, with automated and manual booking options.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b24">
+
+  <title>GoldenglobalXprex | Travel & Transport</title>
+
+  <style>
+    :root {
+      --green: #176b4d;
+      --dark: #102b24;
+      --lime: #d9f36a;
+      --light: #f4f8f5;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--light);
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+      color: var(--lime);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 7px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #102b24, #176b4d);
+      color: white;
+      padding: 65px 6%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 6vw, 48px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--lime);
+      color: var(--dark);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 40px 6%;
+    }
+
+    h2 {
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #0000000d;
+    }
+
+    .card h3 {
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .booking {
+      background: white;
+      max-width: 700px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px #00000012;
+    }
+
+    label {
+      display: block;
+      margin-top: 14px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    form button {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .notice {
+      background: #fff8d8;
+      padding: 14px;
+      border-radius: 8px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    #confirmation {
+      margin-top: 20px;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 25px 6%;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: var(--lime);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">GoldenglobalXprex</div>
+
+  <nav>
+    <a href="#home">Home</
